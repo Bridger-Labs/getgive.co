@@ -1,0 +1,29 @@
+/* Minimal dependency-free member UI until Tailwind/shadcn are introduced. */
+.gg-auth-screen, .gg-account-screen { min-height: 100vh; background: #f8faf8; color: #1e2925; font-family: system-ui, sans-serif; font-size: 16px; line-height: 1.5; }
+.gg-auth-screen { display: grid; place-items: center; padding: 48px 20px; }
+.gg-panel { background: #fff; border: 1px solid #e2e9e3; border-radius: 18px; padding: 32px; box-shadow: 0 6px 22px rgba(20, 30, 24, .035); }
+.gg-auth-screen .gg-panel { width: 100%; max-width: 470px; }
+.gg-wordmark { font-size: 27px; font-weight: 800; letter-spacing: -.06em; text-decoration: none; color: #23392a; }
+.gg-wordmark span { color: #74a06f; }
+.gg-auth-screen h1, .gg-account-screen h1 { font-size: 34px; line-height: 1.2; margin: 24px 0 10px; }
+.gg-auth-screen p, .gg-account-screen p { margin: 0 0 22px; }
+.gg-form { display: flex; flex-direction: column; gap: 10px; }
+.gg-form label { font-size: 14px; font-weight: 650; margin-top: 10px; }
+.gg-form input, .gg-form textarea, .gg-form select { width: 100%; padding: 12px 14px; font: inherit; border: 1px solid #b8c8ba; border-radius: 9px; color: #1e2925; background: #fff; }
+.gg-form input:focus-visible, .gg-form textarea:focus-visible, .gg-form select:focus-visible, .gg-button:focus-visible, .gg-text-button:focus-visible, .gg-wordmark:focus-visible { outline: 3px solid #75a573; outline-offset: 3px; }
+.gg-button { margin-top: 14px; border: 0; background: #254b34; color: white; border-radius: 9px; padding: 13px 16px; cursor: pointer; font: inherit; font-weight: 700; }
+.gg-button:disabled { opacity: .6; cursor: wait; }
+.gg-footer-note { margin-top: 26px !important; font-size: 14px; }
+.gg-footer-note a { color: #245b3d; }
+.gg-error { padding: 11px 14px; border-radius: 8px; background: #fff1f0; color: #922c25; font-size: 14px; }
+.gg-success { padding: 11px 14px; border-radius: 8px; background: #e5f5e7; color: #235c32; font-size: 14px; }
+.gg-account-inner { max-width: 840px; margin: 0 auto; padding: 32px 20px 64px; }
+.gg-account-header { display: flex; justify-content: space-between; align-items: center; }
+.gg-text-button { color: #284a34; background: transparent; border: 0; font: inherit; text-decoration: underline; cursor: pointer; }
+.gg-account-form { gap: 20px; }
+.gg-account-form .gg-panel { display: flex; flex-direction: column; gap: 8px; }
+.gg-account-form h2 { margin: 0 0 7px; font-size: 23px; }
+.gg-account-form h3 { margin: 16px 0 0; font-size: 18px; }
+.gg-hint, .gg-muted { font-size: 14px; color: #526458; }
+.gg-hint { margin: 6px 0 0 !important; }
+@media (max-width: 600px) { .gg-panel { padding: 22px; } .gg-auth-screen h1, .gg-account-screen h1 { font-size: 28px; } }
